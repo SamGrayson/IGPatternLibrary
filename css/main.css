@@ -230,7 +230,7 @@ $font-boldest: Avenir-Black;
   background-color: #23a902; }
 
 .ig-modal-header.error {
-  background-color: #ec5840; }
+  background-color: #F10000; }
 
 .ig-modal-header.primary {
   background-color: #007EE6; }
@@ -284,6 +284,61 @@ $font-boldest: Avenir-Black;
   .reveal.ig-reveal .ig-modal-post-message {
     padding: 50px; }
 
+.ig-message {
+  position: relative; }
+  .ig-message .message-icon {
+    position: absolute;
+    left: 0;
+    width: 45px;
+    height: 100%; }
+  .ig-message .message-main {
+    padding: 15px;
+    margin-left: 45px; }
+
+.ig-message.warning {
+  border: 1px solid #ffae00; }
+  .ig-message.warning .message-icon {
+    background-color: #ffae00;
+    background-image: url("../images/exclamation.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.4em; }
+  .ig-message.warning .message-main {
+    background-color: #FEF2DE; }
+
+.ig-message.danger {
+  border: 1px solid #F10000; }
+  .ig-message.danger .message-icon {
+    background-color: #F10000;
+    background-image: url("../images/ig-cancel.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em; }
+  .ig-message.danger .message-main {
+    background-color: #FDE5E5; }
+
+.ig-message.success {
+  border: 1px solid #23a902; }
+  .ig-message.success .message-icon {
+    background-color: #23a902;
+    background-image: url("../images/check-mark.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em; }
+  .ig-message.success .message-main {
+    background-color: #E9F4E7; }
+
+.ig-message.primary {
+  border: 1px solid #007EE6; }
+  .ig-message.primary .message-icon {
+    background-color: #007EE6;
+    background-image: url("../images/info.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.6em; }
+  .ig-message.primary .message-main {
+    background-color: #E6F0FA; }
+
 @media screen and (max-width: 39.9375em) {
   .reveal.ig-reveal {
     min-height: inherit;
@@ -325,13 +380,13 @@ $font-boldest: Avenir-Black;
     background-color: #1b8102; }
 
 .button.ig-alert-button {
-  background: #ec5840; }
+  background: #F10000; }
   .button.ig-alert-button:hover {
-    background-color: #e8381b; }
+    background-color: #c80000; }
   .button.ig-alert-button:active {
-    background-color: #e8381b; }
+    background-color: #c80000; }
   .button.ig-alert-button:focus {
-    background-color: #e8381b; }
+    background-color: #c80000; }
 
 .button.ig-warning-button {
   background: #ffae00; }
@@ -387,17 +442,17 @@ $font-boldest: Avenir-Black;
     color: #1b8102; }
 
 .button.hollow.ig-alert-button {
-  border: 1px solid #ec5840;
-  color: #ec5840; }
+  border: 1px solid #F10000;
+  color: #F10000; }
   .button.hollow.ig-alert-button:hover {
-    border: 1px solid #e8381b;
-    color: #e8381b; }
+    border: 1px solid #c80000;
+    color: #c80000; }
   .button.hollow.ig-alert-button:active {
-    border: 1px solid #e8381b;
-    color: #e8381b; }
+    border: 1px solid #c80000;
+    color: #c80000; }
   .button.hollow.ig-alert-button:focus {
-    border: 1px solid #e8381b;
-    color: #e8381b; }
+    border: 1px solid #c80000;
+    color: #c80000; }
 
 .button.hollow.ig-warning-button {
   border: 1px solid #ffae00;

@@ -36,15 +36,15 @@
 };
 
 .button.ig-alert-button {
-  background: $alert-color;
+  background: #F10000;
   &:hover {
-    background-color: darken($alert-color, 8%);
+    background-color: darken(#F10000, 8%);
   }
   &:active {
-    background-color: darken($alert-color, 8%);
+    background-color: darken(#F10000, 8%);
   }
   &:focus {
-    background-color: darken($alert-color, 8%);
+    background-color: darken(#F10000, 8%);
   }
 };
 
