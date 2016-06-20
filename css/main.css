@@ -292,7 +292,7 @@ $font-boldest: Avenir-Black;
     width: 45px;
     height: 100%; }
   .ig-message .message-main {
-    padding: 15px;
+    padding: 10px 15px;
     margin-left: 45px; }
 
 .ig-message.warning {
