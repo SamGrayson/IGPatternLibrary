@@ -8,7 +8,7 @@ $secondary-hover-color: #fb9708;
 $tertiary-color: #fbdca6;
 $success-color: #23a902;
 $warning-color: #ffae00;
-$alert-color: #ec5840;
+$alert-color: #F10000;
 $light-gray: #EEEEEE;
 $medium-gray: #666666;
 $dark-gray: #333333;
@@ -164,7 +164,6 @@ $reveal-radius: 0;
 .ig-modal-header.error {
   background-color: $alert-color;
 }
-
 .ig-modal-header.primary {
   background-color: $primary-color;
 }
@@ -229,6 +228,73 @@ $reveal-radius: 0;
   }
   .ig-modal-post-message {
     padding: 50px;
+  }
+}
+
+.ig-message {
+  position: relative;
+  .message-icon {
+    position: absolute;
+    left:0;
+    width: 45px;
+    height: 100%;
+  }
+  .message-main {
+    padding:10px 15px;
+    margin-left:45px;
+  }
+}
+
+.ig-message.warning {
+  border: 1px solid $warning-color;
+  .message-icon {
+    background-color: $warning-color;
+    background-image: url("../images/exclamation.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.4em;
+  }
+  .message-main {
+    background-color: #FEF2DE;
+  }
+}
+.ig-message.danger {
+  border: 1px solid $alert-color;
+  .message-icon {
+    background-color: $alert-color;
+    background-image: url("../images/ig-cancel.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+  }
+  .message-main {
+    background-color: #FDE5E5;
+  }
+}
+.ig-message.success {
+  border: 1px solid $success-color;
+  .message-icon {
+    background-color: $success-color;
+    background-image: url("../images/check-mark.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+  }
+  .message-main {
+    background-color: #E9F4E7;
+  }
+}
+.ig-message.primary {
+  border: 1px solid $primary-color;
+  .message-icon {
+    background-color: $primary-color;
+    background-image: url("../images/info.svg");
+    background-position: right 50% bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.6em;
+  }
+  .message-main {
+    background-color: #E6F0FA;
   }
 }
 
