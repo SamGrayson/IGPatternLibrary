@@ -1,0 +1,129 @@
+<b><h2 id="modal" class="padding-top-10">Modals</h2></b>
+<div class="pattern-forms pattern-section">
+  <h3>Modals (reveal)</h3>
+  <p>
+    Foundation documentation: <a target="#blank" href="http://foundation.zurb.com/sites/docs/reveal.html" target="#">http://foundation.zurb.com/sites/docs/reveal.html</a>
+    <br>
+    <br>
+    Default modal size is "tiny" (30% wide). Styling covers header and body background-color for simple customization.
+    <div class="margin-bottom-25">
+      <pre><code class="css">
+  // REVEAL (SASS)
+
+  .ig-modal-header.warning {
+    background-color: $warning-color;
+  }
+  .ig-modal-header.success {
+    background-color: $success-color;
+  }
+  .ig-modal-header.error {
+    background-color: $alert-color;
+  }
+
+  .ig-modal-header.primary {
+    background-color: $primary-color;
+  }
+
+  .reveal.ig-reveal {
+    padding: 0 !important;
+    outline: none;
+    border: none;
+    background-color: $light-gray;
+    border: 1px solid $dark-gray;
+    .ig-modal-header {
+      //box-shadow: 0 1px 4px 0px $medium-gray;
+      position: relative;
+      padding: 15px;
+      font-size: 24px;
+      h5 {
+        font-size: 24px;
+      }
+      .ig-modal-close {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        right: 8px;
+        fill: white;
+        top: -18%;
+      }
+      svg {
+        color: $white;
+        fill: $white;
+        -webkit-transition: .3s ease-in;
+        transition: .3s ease-in;
+        height: .6em;
+        width: .6em;
+        &:hover {
+          cursor: pointer;
+          color: white;
+          fill: white;
+        }
+      }
+    }
+    .ig-modal-body {
+      background-color: $white;
+      //margin:25px;
+      padding: 25px;
+      color: $dark-gray;
+      font-size: 16px;
+      box-shadow: 0px 2px 4px 0px $medium-gray;
+      .modal-main-message {
+        font-size: 18px;
+      }
+    }
+    .ig-modal-footer {
+      padding: 15px 0;
+      a {
+        min-width: 150px;
+      }
+    }
+    .ig-modal-post-message {
+      padding: 50px;
+    }
+  }
+      </code></pre>
+    </div>
+  </p>
+  <div class="row">
+    <div class="reveal ig-reveal" id="exampleWarning" data-reveal>
+      <div class="row ig-modal-header warning text-center">
+        <a class="ig-modal-close" data-close>
+          <span aria-hidden="true">&times;</span>
+        </a>
+      </div>
+      <div class="ig-modal-body">
+        I am the body!!
+      </div>
+    </div>
+    <div class="reveal ig-reveal" id="exampleSuccess" data-reveal>
+      <div class="row ig-modal-header success text-center">
+        <a class="ig-modal-close" data-close>
+          <span aria-hidden="true">&times;</span>
+        </a>
+      </div>
+      <div class="ig-modal-body">
+        I am the body!!
+      </div>
+    </div>
+    <div class="reveal ig-reveal" id="examplePrimary" data-reveal>
+      <div class="row ig-modal-header primary text-center">
+        <a class="ig-modal-close" data-close>
+          <span aria-hidden="true">&times;</span>
+        </a>
+      </div>
+      <div class="ig-modal-body">
+        I am the body!!
+      </div>
+    </div>
+    <div class="columns small-4">
+      <a class="button ig-warning-button" data-open="exampleWarning">Warning-modal</a>
+    </div>
+    <div class="columns small-4">
+      <a class="button ig-success-button" data-open="exampleSuccess">Success-modal</a>
+    </div>
+    <div class="columns small-4">
+      <a class="button ig-primary-button" data-open="examplePrimary">Primary-modal</a>
+    </div>
+  </div>
+</div>
+<hr>

@@ -1,0 +1,46 @@
+
+.color-pallet {
+  background-color: $white;
+}
+
+.color-preview {
+  height: 25px;
+  width: 25px;
+  /* margin-left: 5px; */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  -webkit-transition: .5 ease;
+  transition: .5 ease;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-color {
+  background-color: $blue;
+}
+
+.color-label {
+  display: block;
+  text-align: center;
+  background-color: $white;
+  padding: 10px;
+}
+
+.color-classes {
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  div {
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  div:first-child {
+    background-color: $white;
+  }
+}

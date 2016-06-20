@@ -1,0 +1,535 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+/*
+$font-light: Avenir-Light;
+$font-bold: Avenir-Roman;
+$font-bolder: Avenir-Medium;
+$font-boldest: Avenir-Black;
+*/
+.margin-top-5 {
+  margin-top: 5px !important; }
+
+.margin-bottom-5 {
+  margin-bottom: 5px !important; }
+
+.margin-left-5 {
+  margin-left: 5px !important; }
+
+.margin-right-5 {
+  margin-right: 5px !important; }
+
+.padding-top-5 {
+  padding-top: 5px !important; }
+
+.padding-bottom-5 {
+  padding-bottom: 5px !important; }
+
+.padding-left-5 {
+  padding-left: 5px !important; }
+
+.padding-right-5 {
+  padding-right: 5px !important; }
+
+.padding-5 {
+  padding: 5px !important; }
+
+.margin-top-10 {
+  margin-top: 10px !important; }
+
+.margin-bottom-10 {
+  margin-bottom: 10px !important; }
+
+.margin-left-10 {
+  margin-left: 10px !important; }
+
+.margin-right-10 {
+  margin-right: 10px !important; }
+
+.padding-top-10 {
+  padding-top: 10px !important; }
+
+.padding-bottom-10 {
+  padding-bottom: 10px !important; }
+
+.padding-left-10 {
+  padding-left: 10px !important; }
+
+.padding-right-10 {
+  padding-right: 10px !important; }
+
+.padding-10 {
+  padding: 10px !important; }
+
+.margin-top-15 {
+  margin-top: 15px !important; }
+
+.margin-bottom-15 {
+  margin-bottom: 15px !important; }
+
+.margin-left-15 {
+  margin-left: 15px !important; }
+
+.margin-right-15 {
+  margin-right: 15px !important; }
+
+.padding-top-15 {
+  padding-top: 15px !important; }
+
+.padding-bottom-15 {
+  padding-bottom: 15px !important; }
+
+.padding-left-15 {
+  padding-left: 15px !important; }
+
+.padding-right-15 {
+  padding-right: 15px !important; }
+
+.padding-15 {
+  padding: 15px !important; }
+
+.margin-top-20 {
+  margin-top: 20px !important; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important; }
+
+.margin-left-20 {
+  margin-left: 20px !important; }
+
+.margin-right-20 {
+  margin-right: 20px !important; }
+
+.padding-top-20 {
+  padding-top: 20px !important; }
+
+.padding-bottom-20 {
+  padding-bottom: 20px !important; }
+
+.padding-left-20 {
+  padding-left: 20px !important; }
+
+.padding-right-20 {
+  padding-right: 20px !important; }
+
+.padding-20 {
+  padding: 20px !important; }
+
+.margin-top-25 {
+  margin-top: 25px !important; }
+
+.margin-bottom-25 {
+  margin-bottom: 25px !important; }
+
+.margin-left-25 {
+  margin-left: 25px !important; }
+
+.margin-right-25 {
+  margin-right: 25px !important; }
+
+.padding-top-25 {
+  padding-top: 25px !important; }
+
+.padding-bottom-25 {
+  padding-bottom: 25px !important; }
+
+.padding-left-25 {
+  padding-left: 25px !important; }
+
+.padding-right-25 {
+  padding-right: 25px !important; }
+
+.padding-25 {
+  padding: 25px !important; }
+
+.noMargin {
+  margin: 0px !important; }
+
+.noPadding {
+  padding: 0px !important; }
+
+.ig-full {
+  width: 100%; }
+
+.ig-text-blue {
+  color: #2C4154; }
+
+.ig-text-secondary {
+  color: #FAAF40; }
+
+.ig-text-tertiary {
+  color: #fbdca6; }
+
+.ig-text-red {
+  color: #851818; }
+
+.ig-text-light-blue {
+  color: #28A1D8; }
+
+.ig-text-error {
+  color: #F10000; }
+
+.ig-text-success {
+  color: #2c9711; }
+
+.ig-background-blue {
+  background-color: #2C4154;
+  color: #FCFBFB; }
+
+.ig-background-secondary {
+  background-color: #FAAF40; }
+
+.ig-background-tertiary {
+  background-color: #fbdca6; }
+
+.ig-background-red {
+  background-color: #851818; }
+
+.ig-input[type='text'] {
+  height: 2.175em;
+  background-color: #ffffff;
+  border: 1px solid #9B9B9B; }
+  .ig-input[type='text']::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #666666; }
+  .ig-input[type='text']::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #666666; }
+  .ig-input[type='text']:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #666666; }
+  .ig-input[type='text']:-moz-placeholder {
+    /* Firefox 18- */
+    color: #666666; }
+  .ig-input[type='text']:focus {
+    border: 1px solid #4A90E2;
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75); }
+
+.ig-input.ig-input-error[type='text'] {
+  border: 1px solid #F10000 !important;
+  padding-right: 32px;
+  background-image: url("../images/cancel.svg");
+  background-position: right 7px bottom 50%;
+  background-repeat: no-repeat;
+  background-size: 1.2em; }
+  .ig-input.ig-input-error[type='text']:focus {
+    border: 1px solid #F10000 !important;
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75); }
+
+.ig-input.ig-input-success[type='text'] {
+  padding-right: 32px;
+  background-image: url("../images/checked.svg");
+  background-position: right 7px bottom 50%;
+  background-repeat: no-repeat;
+  background-size: 1.2em; }
+  .ig-input.ig-input-success[type='text']:focus {
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75); }
+
+.ig-modal-header.warning {
+  background-color: #ffae00; }
+
+.ig-modal-header.success {
+  background-color: #23a902; }
+
+.ig-modal-header.error {
+  background-color: #ec5840; }
+
+.ig-modal-header.primary {
+  background-color: #007EE6; }
+
+.reveal.ig-reveal {
+  padding: 0 !important;
+  outline: none;
+  border: none;
+  background-color: #EEEEEE;
+  border: 1px solid #333333; }
+  .reveal.ig-reveal .ig-modal-header {
+    position: relative;
+    padding: 15px;
+    font-size: 24px; }
+    .reveal.ig-reveal .ig-modal-header span {
+      color: white;
+      font-size: 1.1em;
+      font-weight: 700; }
+    .reveal.ig-reveal .ig-modal-header h5 {
+      font-size: 24px; }
+    .reveal.ig-reveal .ig-modal-header .ig-modal-close {
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      right: 8px;
+      fill: white;
+      top: -18%; }
+    .reveal.ig-reveal .ig-modal-header svg {
+      color: #FCFBFB;
+      fill: #FCFBFB;
+      -webkit-transition: .3s ease-in;
+      transition: .3s ease-in;
+      height: .6em;
+      width: .6em; }
+      .reveal.ig-reveal .ig-modal-header svg:hover {
+        cursor: pointer;
+        color: white;
+        fill: white; }
+  .reveal.ig-reveal .ig-modal-body {
+    background-color: #FCFBFB;
+    padding: 25px;
+    color: #333333;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px 0px #666666; }
+    .reveal.ig-reveal .ig-modal-body .modal-main-message {
+      font-size: 18px; }
+  .reveal.ig-reveal .ig-modal-footer {
+    padding: 15px 0; }
+    .reveal.ig-reveal .ig-modal-footer a {
+      min-width: 150px; }
+  .reveal.ig-reveal .ig-modal-post-message {
+    padding: 50px; }
+
+@media screen and (max-width: 39.9375em) {
+  .reveal.ig-reveal {
+    min-height: inherit;
+    height: inherit;
+    width: 100%; }
+    .reveal.ig-reveal .ig-modal-header {
+      padding: 15px 45px; }
+
+  .reveal.ig-full-reveal {
+    min-height: 100vh !important;
+    width: 100% !important; }
+    .reveal.ig-full-reveal .ig-modal-body {
+      height: 100vh; } }
+.button {
+  font-weight: 500;
+  padding: .75em;
+  min-width: 200px;
+  letter-spacing: 1.2px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  .button:focus {
+    outline: none; }
+
+.button.ig-red-button {
+  background: #851818; }
+  .button.ig-red-button:hover {
+    background-color: #621212; }
+  .button.ig-red-button:active {
+    background-color: #621212; }
+  .button.ig-red-button:focus {
+    background-color: #621212; }
+
+.button.ig-success-button {
+  background: #23a902; }
+  .button.ig-success-button:hover {
+    background-color: #1b8102; }
+  .button.ig-success-button:active {
+    background-color: #1b8102; }
+  .button.ig-success-button:focus {
+    background-color: #1b8102; }
+
+.button.ig-alert-button {
+  background: #ec5840; }
+  .button.ig-alert-button:hover {
+    background-color: #e8381b; }
+  .button.ig-alert-button:active {
+    background-color: #e8381b; }
+  .button.ig-alert-button:focus {
+    background-color: #e8381b; }
+
+.button.ig-warning-button {
+  background: #ffae00; }
+  .button.ig-warning-button:hover {
+    background-color: #d69200; }
+  .button.ig-warning-button:active {
+    background-color: #d69200; }
+  .button.ig-warning-button:focus {
+    background-color: #d69200; }
+
+.button.ig-primary-button {
+  background: #2C4154; }
+  .button.ig-primary-button:hover {
+    background-color: #1e2c39; }
+  .button.ig-primary-button:active {
+    background-color: #1e2c39; }
+  .button.ig-primary-button:focus {
+    background-color: #1e2c39; }
+
+.button.ig-default-button {
+  background: #777777; }
+  .button.ig-default-button:hover {
+    background-color: #636363; }
+  .button.ig-default-button:active {
+    background-color: #636363; }
+  .button.ig-default-button:focus {
+    background-color: #636363; }
+
+.button.hollow.ig-red-button {
+  border: 1px solid #851818;
+  color: #851818; }
+  .button.hollow.ig-red-button:hover {
+    border: 1px solid #621212;
+    color: #621212; }
+  .button.hollow.ig-red-button:active {
+    border: 1px solid #621212;
+    color: #621212; }
+  .button.hollow.ig-red-button:focus {
+    border: 1px solid #621212;
+    color: #621212; }
+
+.button.hollow.ig-success-button {
+  border: 1px solid #23a902;
+  color: #23a902; }
+  .button.hollow.ig-success-button:hover {
+    border: 1px solid #1b8102;
+    color: #1b8102; }
+  .button.hollow.ig-success-button:active {
+    border: 1px solid #1b8102;
+    color: #1b8102; }
+  .button.hollow.ig-success-button:focus {
+    border: 1px solid #1b8102;
+    color: #1b8102; }
+
+.button.hollow.ig-alert-button {
+  border: 1px solid #ec5840;
+  color: #ec5840; }
+  .button.hollow.ig-alert-button:hover {
+    border: 1px solid #e8381b;
+    color: #e8381b; }
+  .button.hollow.ig-alert-button:active {
+    border: 1px solid #e8381b;
+    color: #e8381b; }
+  .button.hollow.ig-alert-button:focus {
+    border: 1px solid #e8381b;
+    color: #e8381b; }
+
+.button.hollow.ig-warning-button {
+  border: 1px solid #ffae00;
+  color: #ffae00; }
+  .button.hollow.ig-warning-button:hover {
+    border: 1px solid #d69200;
+    color: #d69200; }
+  .button.hollow.ig-warning-button:active {
+    border: 1px solid #d69200;
+    color: #d69200; }
+  .button.hollow.ig-warning-button:focus {
+    border: 1px solid #d69200;
+    color: #d69200; }
+
+.button.hollow.ig-primary-button {
+  border: 1px solid #007EE6;
+  color: #007EE6; }
+  .button.hollow.ig-primary-button:hover {
+    border: 1px solid #0068bd;
+    color: #0068bd; }
+  .button.hollow.ig-primary-button:active {
+    border: 1px solid #0068bd;
+    color: #0068bd; }
+  .button.hollow.ig-primary-button:focus {
+    border: 1px solid #0068bd;
+    color: #0068bd; }
+
+.button.hollow.ig-default-button {
+  border: 1px solid #777777;
+  color: #777777; }
+  .button.hollow.ig-default-button:hover {
+    border: 1px solid #636363;
+    color: #636363; }
+  .button.hollow.ig-default-button:active {
+    border: 1px solid #636363;
+    color: #636363; }
+  .button.hollow.ig-default-button:focus {
+    border: 1px solid #636363;
+    color: #636363; }
+
+.button.button.ig-blank-button {
+  background-color: transparent;
+  border: none;
+  color: #666666; }
+  .button.button.ig-blank-button:hover {
+    background-color: transparent;
+    border: none;
+    color: #333333; }
+  .button.button.ig-blank-button:focus {
+    background-color: transparent;
+    border: none; }
+
+.color-pallet {
+  background-color: #FCFBFB; }
+
+.color-preview {
+  height: 25px;
+  width: 25px;
+  /* margin-left: 5px; */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  -webkit-transition: .5 ease;
+  transition: .5 ease; }
+  .color-preview:hover {
+    cursor: pointer; }
+
+.primary-color {
+  background-color: #2C4154; }
+
+.color-label {
+  display: block;
+  text-align: center;
+  background-color: #FCFBFB;
+  padding: 10px; }
+
+.color-classes {
+  width: 80%;
+  margin: 0 auto;
+  color: white; }
+  .color-classes div {
+    padding: 15px;
+    margin-bottom: 5px;
+    font-weight: bold; }
+  .color-classes div:first-child {
+    background-color: #FCFBFB; }
+
+html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+  background-color: #FCFBFB;
+  text-size: 16px; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #FCFBFB !important; }
+
+a, h1, h2, h3, h4, h5, h6, p, li, ul {
+  font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.page-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 50px;
+  font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+
+.pattern-header {
+  width: 100%; }
+  .pattern-header img {
+    display: block;
+    margin: 0 auto;
+    width: 25%; }
+
+.pattern-tob a {
+  text-decoration: none;
+  color: #28A1D8; }
+.pattern-tob ul {
+  margin-left: 50px; }
+
+.pattern-section {
+  padding: 15px 25px;
+  background-color: #EEEEEE; }
+
+code {
+  background-color: #f9f9f9 !important; }
+
+/*# sourceMappingURL=main.css.map */

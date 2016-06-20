@@ -1,0 +1,98 @@
+<b><h2 id="forms" class="padding-top-10">Forms</h2></b>
+<div class="pattern-forms pattern-section">
+  <h3>Form Basics</h3>
+  <p>
+    Foundation documentation: <a target="#blank" href="http://foundation.zurb.com/sites/docs/forms.html" target="#">http://foundation.zurb.com/sites/docs/forms.html</a>
+    <div class="margin-bottom-25">
+      <pre><code class="css">
+  // Text Input (SASS STYLING)
+
+  .ig-input[type='text'] {
+    height: 2.175em;
+    background-color: #ffffff;
+    border: 1px solid #9B9B9B;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #666666;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: #666666
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: #666666
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: #666666
+    }
+    &:focus {
+      border: 1px solid #4A90E2;
+      box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+    }
+  }
+
+</code><code class="html margin-top-5">
+  &ltinput type="text" class="ig-input" placeholder="type: text" />
+    </code></pre>
+    </div>
+  </p>
+  <div class="row margin-bottom-25">
+    <div class="columns">
+      <input type="text" class="ig-input" name="name" value="" placeholder="type: text">
+    </div>
+  </div>
+
+  <div class="margin-bottom-25">
+    <pre><code class="css">
+  // Text Error (SASS STYLING)
+
+  .ig-input.ig-input-error[type='text'] {
+    border: 1px solid $ig-error-color !important;
+    padding-right: 32px;
+      background-image: url("../images/cancel.svg");
+      background-position: right 7px bottom 50%;
+      background-repeat: no-repeat;
+      background-size: 1em;
+    &:focus {
+      border: 1px solid $ig-error-color !important;
+      box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+    }
+  }
+
+</code><code class="html margin-top-5">
+  &ltinput type="text" class="ig-input ig-input-error" placeholder="type: text" />
+  </code></pre>
+  </div>
+</p>
+<div class="row">
+  <div class="columns">
+    <input type="text" class="ig-input ig-input-error" name="name" placeholder="ERROR ERROR" value="">
+  </div>
+</div>
+
+<div class="margin-bottom-25">
+  <pre><code class="css">
+  // Text Success (SASS STYLING)
+
+  .ig-input.ig-input-success[type='text'] {
+    padding-right: 32px;
+      background-image: url("../images/checked.svg");
+      background-position: right 7px bottom 50%;
+      background-repeat: no-repeat;
+      background-size: 1em;
+    &:focus {
+      box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+    }
+  }
+
+</code><code class="html margin-top-5">
+  &ltinput type="text" class="ig-input ig-input-error" placeholder="type: text" />
+
+</code></pre>
+</div>
+</p>
+<div class="row">
+<div class="columns">
+  <input type="text" class="ig-input ig-input-success" name="name" placeholder="Success!" value="">
+</div>
+</div>
+</div>
+<hr>

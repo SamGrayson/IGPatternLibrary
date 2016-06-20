@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+// GLOBAL OVERRIDES
+
+$primary-color: #007EE6;
+$secondary-color: #FAAF40;
+$secondary-hover-color: #fb9708;
+$tertiary-color: #fbdca6;
+$success-color: #23a902;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #EEEEEE;
+$medium-gray: #666666;
+$dark-gray: #333333;
+$ig-success-color: #2c9711;
+$default-color: #777777;
+$ig-error-color: #F10000;
+$black: #000;
+$white: #FCFBFB;
+$red: #851818;
+$blue: #2C4154;
+$light-blue: #28A1D8;
+$body-background: #FCFBFB;
+$body-font-family: Lato, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+/*
+$font-light: Avenir-Light;
+$font-bold: Avenir-Roman;
+$font-bolder: Avenir-Medium;
+$font-boldest: Avenir-Black;
+*/
+
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+$button-background: #0D4536;
+$button-background-hover: scale-color($button-background, $lightness: +10%);
+
+$input-border: 1px solid $light-gray;
+$input-border-focus: 1px solid $primary-color;
+$input-shadow-focus: 0 0 5px $primary-color;
+
+$offcanvas-size: 20em;
+
+$dropdownmenu-arrows: false;
+
+$reveal-padding: 0;
+$reveal-radius: 0;
+
+// LAYOUT CLASSES
+
+@for $i from 1 through 5 {
+  .margin-top-#{$i*5} {
+    margin-top: $i * 5px !important;
+  }
+  .margin-bottom-#{$i*5} {
+    margin-bottom: $i * 5px !important;
+  }
+  .margin-left-#{$i*5} {
+    margin-left: $i * 5px !important;
+  }
+  .margin-right-#{$i*5} {
+    margin-right: $i * 5px !important;
+  }
+  .padding-top-#{$i*5} {
+    padding-top: $i * 5px !important;
+  }
+  .padding-bottom-#{$i*5} {
+    padding-bottom: $i * 5px !important;
+  }
+  .padding-left-#{$i*5} {
+    padding-left: $i * 5px !important;
+  }
+  .padding-right-#{$i*5} {
+    padding-right: $i * 5px !important;
+  }
+  .padding-#{$i*5} {
+    padding: $i * 5px !important;
+  }
+}
+
+.noMargin {
+  margin: 0px !important;
+}
+
+.noPadding {
+  padding: 0px !important;
+}
+
+.ig-full { width:100% };
+
+//// Color Classes
+.ig-text-blue { color: $blue };
+.ig-text-secondary { color: $secondary-color };
+.ig-text-tertiary { color: $tertiary-color };
+.ig-text-red { color: $red };
+.ig-text-light-blue { color: $light-blue };
+.ig-text-error { color: $ig-error-color };
+.ig-text-success { color: $ig-success-color };
+
+//// Background Color Classes
+.ig-background-blue { background-color: $blue; color: $white};
+.ig-background-secondary { background-color: $secondary-color };
+.ig-background-tertiary { background-color: $tertiary-color };
+.ig-background-red { background-color: $red };
+
+// FORMS
+.ig-input[type='text'] {
+  height: 2.175em;
+  background-color: #ffffff;
+  border: 1px solid #9B9B9B;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666666;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #666666
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #666666
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #666666
+  }
+  &:focus {
+    border: 1px solid #4A90E2;
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+  }
+}
+
+.ig-input.ig-input-error[type='text'] {
+  border: 1px solid $ig-error-color !important;
+  padding-right: 32px;
+    background-image: url("../images/cancel.svg");
+    background-position: right 7px bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+  &:focus {
+    border: 1px solid $ig-error-color !important;
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+  }
+}
+
+.ig-input.ig-input-success[type='text'] {
+  // border: 1px solid $ig-success-color!important;
+  padding-right: 32px;
+    background-image: url("../images/checked.svg");
+    background-position: right 7px bottom 50%;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+  &:focus {
+    // border: 1px solid $ig-success-color !important;
+    box-shadow: 0px 0px 2px 0px rgba(73, 143, 225, 0.75);
+  }
+}
+
+// REVEAL (SASS)
+
+.ig-modal-header.warning {
+  background-color: $warning-color;
+}
+.ig-modal-header.success {
+  background-color: $success-color;
+}
+.ig-modal-header.error {
+  background-color: $alert-color;
+}
+
+.ig-modal-header.primary {
+  background-color: $primary-color;
+}
+
+.reveal.ig-reveal {
+  padding: 0 !important;
+  outline: none;
+  border: none;
+  background-color: $light-gray;
+  border: 1px solid $dark-gray;
+  .ig-modal-header {
+    //box-shadow: 0 1px 4px 0px $medium-gray;
+    position: relative;
+    padding: 15px;
+    font-size: 24px;
+    span {
+      color: white;
+      font-size: 1.1em;
+      font-weight: 700;
+    }
+    h5 {
+      font-size: 24px;
+    }
+    .ig-modal-close {
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      right: 8px;
+      fill: white;
+      top: -18%;
+    }
+    svg {
+      color: $white;
+      fill: $white;
+      -webkit-transition: .3s ease-in;
+      transition: .3s ease-in;
+      height: .6em;
+      width: .6em;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        fill: white;
+      }
+    }
+  }
+  .ig-modal-body {
+    background-color: $white;
+    //margin:25px;
+    padding: 25px;
+    color: $dark-gray;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px 0px $medium-gray;
+    .modal-main-message {
+      font-size: 18px;
+    }
+  }
+  .ig-modal-footer {
+    padding: 15px 0;
+    a {
+      min-width: 150px;
+    }
+  }
+  .ig-modal-post-message {
+    padding: 50px;
+  }
+}
+
+// REMOVING DEFAULT FULL SCREEN FOR MOBILE
+@media screen and (max-width: 39.9375em) {
+  .reveal.ig-reveal {
+    .ig-modal-header {
+      padding: 15px 45px;
+    }
+    min-height: inherit;
+    height: inherit;
+    width: 100%;
+  }
+
+  // OPTIONAL FULL SCREEN FOR MOBILE
+  .reveal.ig-full-reveal {
+    min-height: 100vh !important;
+    width: 100% !important;
+    .ig-modal-body {
+      height: 100vh;
+    }
+  }
+}

@@ -1,0 +1,206 @@
+.button {
+  font-weight: 500;
+  padding: .75em;
+  min-width: 200px;
+  letter-spacing: 1.2px;
+  font-family: $body-font-family;
+  &:focus {
+    outline: none;
+  }
+};
+
+.button.ig-red-button {
+  background: $red;
+  &:hover {
+    background-color: darken($red, 8%);
+  }
+  &:active {
+    background-color: darken($red, 8%);
+  }
+  &:focus {
+    background-color: darken($red, 8%);
+  }
+};
+
+.button.ig-success-button {
+  background: $success-color;
+  &:hover {
+    background-color: darken($success-color, 8%);
+  }
+  &:active {
+    background-color: darken($success-color, 8%);
+  }
+  &:focus {
+    background-color: darken($success-color, 8%);
+  }
+};
+
+.button.ig-alert-button {
+  background: $alert-color;
+  &:hover {
+    background-color: darken($alert-color, 8%);
+  }
+  &:active {
+    background-color: darken($alert-color, 8%);
+  }
+  &:focus {
+    background-color: darken($alert-color, 8%);
+  }
+};
+
+.button.ig-warning-button {
+  background: $warning-color;
+  &:hover {
+    background-color: darken($warning-color, 8%);
+  }
+  &:active {
+    background-color: darken($warning-color, 8%);
+  }
+  &:focus {
+    background-color: darken($warning-color, 8%);
+  }
+};
+
+.button.ig-primary-button {
+  background: $blue;
+  &:hover {
+    background-color: darken($blue, 8%);
+  }
+  &:active {
+    background-color: darken($blue, 8%);
+  }
+  &:focus {
+    background-color: darken($blue, 8%);
+  }
+};
+
+.button.ig-default-button {
+  background: $default-color;
+
+  &:hover {
+    background-color: darken($default-color, 8%);
+  }
+  &:active {
+    background-color: darken($default-color, 8%);
+  }
+  &:focus {
+    background-color: darken($default-color, 8%);
+  }
+};
+
+.button.hollow.ig-red-button {
+  border: 1px solid $red;
+  color: $red;
+  &:hover {
+    border: 1px solid darken($red, 8%);
+    color: darken($red, 8%);
+  }
+  &:active {
+    border: 1px solid darken($red, 8%);
+    color: darken($red, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($red, 8%);
+    color: darken($red, 8%);
+  }
+}
+
+.button.hollow.ig-success-button {
+  border: 1px solid $success-color;
+  color: $success-color;
+  &:hover {
+    border: 1px solid darken($success-color, 8%);
+    color: darken($success-color, 8%);
+  }
+  &:active {
+    border: 1px solid darken($success-color, 8%);
+    color: darken($success-color, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($success-color, 8%);
+    color: darken($success-color, 8%);
+  }
+}
+
+.button.hollow.ig-alert-button {
+  border: 1px solid $alert-color;
+  color: $alert-color;
+  &:hover {
+    border: 1px solid darken($alert-color, 8%);
+    color: darken($alert-color, 8%);
+  }
+  &:active {
+    border: 1px solid darken($alert-color, 8%);
+    color: darken($alert-color, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($alert-color, 8%);
+    color: darken($alert-color, 8%);
+  }
+}
+
+.button.hollow.ig-warning-button {
+  border: 1px solid $warning-color;
+  color: $warning-color;
+  &:hover {
+    border: 1px solid darken($warning-color, 8%);
+    color: darken($warning-color, 8%);
+  }
+  &:active {
+    border: 1px solid darken($warning-color, 8%);
+    color: darken($warning-color, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($warning-color, 8%);
+    color: darken($warning-color, 8%);
+  }
+}
+
+.button.hollow.ig-primary-button {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  &:hover {
+    border: 1px solid darken($primary-color, 8%);
+    color: darken($primary-color, 8%);
+  }
+  &:active {
+    border: 1px solid darken($primary-color, 8%);
+    color: darken($primary-color, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($primary-color, 8%);
+    color: darken($primary-color, 8%);
+  }
+}
+
+.button.hollow.ig-default-button {
+  border: 1px solid $default-color;
+  color: $default-color;
+  &:hover {
+    border: 1px solid darken($default-color, 8%);
+    color: darken($default-color, 8%);
+  }
+  &:active {
+    border: 1px solid darken($default-color, 8%);
+    color: darken($default-color, 8%);
+  }
+  &:focus {
+    border: 1px solid darken($default-color, 8%);
+    color: darken($default-color, 8%);
+  }
+}
+
+.button.button.ig-blank-button {
+  background-color: transparent;
+  border: none;
+  color: $medium-gray;
+  &:hover {
+    background-color: transparent;
+    border: none;
+    color:$dark-gray;
+  }
+  &:focus {
+    background-color: transparent;
+    border: none;
+  }
+}

@@ -1,0 +1,66 @@
+// IMPORTS
+@import "_settings";
+@import "_buttons";
+@import "_colors";
+
+// PAGE SETUP
+html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+  background-color: $white;
+  text-size: 16px;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: $white !important;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, li, ul {
+  font-family: $body-font-family;
+}
+
+.page-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 50px;
+  font-family: $body-font-family;
+}
+
+// HEADER
+
+.pattern-header {
+  width: 100%;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+  }
+}
+
+// TABLE OF CONTENTS
+
+.pattern-tob {
+  a {
+    text-decoration: none;
+    color: $light-blue;
+  }
+  ul {
+    margin-left: 50px;
+  }
+}
+
+// GLOBALS
+
+.pattern-section {
+  padding: 15px 25px;
+  background-color: $light-gray;
+}
+
+code {
+  background-color: #f9f9f9 !important;
+}
