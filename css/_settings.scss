@@ -231,6 +231,13 @@ $reveal-radius: 0;
   }
 }
 
+// MESSAGES
+.callout {
+  border: none !important;
+  padding: 0 !important;
+  background-color: none !important;
+}
+
 .ig-message {
   position: relative;
   .message-icon {
@@ -240,8 +247,14 @@ $reveal-radius: 0;
     height: 100%;
   }
   .message-main {
-    padding:10px 15px;
+    padding:10px 25px 10px 20px;
     margin-left:45px;
+    word-wrap: break-word;
+  }
+  .close-button {
+    font-size: 1.8em;
+    top: 0rem;
+    right:.3rem;
   }
 }
 

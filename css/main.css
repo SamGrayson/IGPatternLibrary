@@ -284,6 +284,11 @@ $font-boldest: Avenir-Black;
   .reveal.ig-reveal .ig-modal-post-message {
     padding: 50px; }
 
+.callout {
+  border: none !important;
+  padding: 0 !important;
+  background-color: none !important; }
+
 .ig-message {
   position: relative; }
   .ig-message .message-icon {
@@ -292,8 +297,13 @@ $font-boldest: Avenir-Black;
     width: 45px;
     height: 100%; }
   .ig-message .message-main {
-    padding: 10px 15px;
-    margin-left: 45px; }
+    padding: 10px 25px 10px 20px;
+    margin-left: 45px;
+    word-wrap: break-word; }
+  .ig-message .close-button {
+    font-size: 1.8em;
+    top: 0rem;
+    right: .3rem; }
 
 .ig-message.warning {
   border: 1px solid #ffae00; }
